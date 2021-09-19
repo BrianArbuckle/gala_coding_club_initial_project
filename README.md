@@ -13,8 +13,8 @@ if needed.
 
 ## make super folder:
 ```bash
-mkdir project_name
-cd project_name
+mkdir our_app
+cd our_app
 ```
 ## make virtual environemnt. 
 
@@ -26,16 +26,15 @@ source venv/bin/activate
 ## make a requrements.txt file. 
 
 ```bash
-mkdir project_name # this is the root of the project and will contain the manage.py
+mkdir our_app # this is the root of the project and will contain the manage.py
 
-echo "Django>=3.2.6,<3.3" > project_name/requirements.txt
+echo "Django>=3.2.6,<3.3" > our_app/requirements.txt
 
-pip install --upgrade pip
-pip install -r project_name/requirements.txt
+pip install -r our_app/requirements.txt
 ```
 ## change to the project directory
 ```bash
-cd project_name
+cd our_app
 python -m django startproject app . # with the period places prject in current folder
 python -m django startproject app myapp # places it in a new myapp directory
 python -m django startproject app # creates a directory call app
