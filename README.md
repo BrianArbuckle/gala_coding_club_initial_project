@@ -27,22 +27,30 @@ source venv/bin/activate
 ## make a requrements.txt file. 
 
 ```bash
-echo "Django>=3.2.6,<3.3" > our_app/requirements.txt
-
-pip install -r our_app/requirements.txt
+echo "Django>=3.2.6,<3.3" > requirements.txt
+python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```
 ## change to the project directory
 ```bash
 cd our_app
-python -m django startproject app . # with the period places prject in current folder
+python -m django startproject app . # Prefered mthod - with the period places prject in current folder
+
 python -m django startproject app myapp # places it in a new myapp directory
 python -m django startproject app # creates a directory call app
 or django-admin startproject ... instead of python -m django startproject
 ```
 ## run dev server
 ```bash
-python manage.py runserver
+python app/manage.py runserver
+
+## OR only if you need to specify the address.
 ```
+python app/manage.py runserver localhost:8000 
+```
+
+
+
 ## add views inside the app folder:
 ```
 mkdir app/views.py
