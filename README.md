@@ -43,7 +43,7 @@ or django-admin startproject ... instead of python -m django startproject
 ## run dev server
 ```bash
 python app/manage.py runserver
-
+```
 ## OR only if you need to specify the address.
 ```
 python app/manage.py runserver localhost:8000 
