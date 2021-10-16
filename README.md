@@ -26,8 +26,6 @@ source venv/bin/activate
 ## make a requrements.txt file. 
 
 ```bash
-mkdir our_app # this is the root of the project and will contain the manage.py
-
 echo "Django>=3.2.6,<3.3" > our_app/requirements.txt
 
 pip install -r our_app/requirements.txt
