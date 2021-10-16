@@ -12,6 +12,7 @@ I don't push to the repo as well as Docker compose Yaml file,
 if needed.
 
 ## make super folder:
+### SKIP THIS IS YOU ALREADY HAVE PROJECT FOLDER
 ```bash
 mkdir our_app
 cd our_app
