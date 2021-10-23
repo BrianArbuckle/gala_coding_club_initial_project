@@ -45,10 +45,22 @@ or django-admin startproject ... instead of python -m django startproject
 python app/manage.py runserver
 ```
 ## OR only if you need to specify the address.
-```
+```bash
 python app/manage.py runserver localhost:8000 
 ```
 
+### When using replit.com do the following:
+
+- In the main folder our_app add a file called `.replit` which can be done from the bash shell:
+```bash
+touch .replit
+```
+- Add the following to the `.replit` file:
+
+```bash
+language = "python3"
+run = "python app/manage.py runserver 0.0.0.0:8000"
+```
 
 
 ## add views inside the app folder:
